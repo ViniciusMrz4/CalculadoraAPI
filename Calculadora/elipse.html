@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="elipse.css">
+    <link rel="shortcut icon" href="imagem/iconeLogo.png" type="image/x-icon"/>
+    <title>Elipse</title>
+    
+</head>
+<body>
+<header>
+    <div class="banner-titulo">
+        <h1>ELIPSE</h1>
+    </div>
+</header>
+<main>
+    <span></span>
+    <div class="container-calculadora">
+        <h1>Calcule o perímetro de uma Elipse</h1>
+        <div class="form-group">
+            <label for="a">Número 1:</label>
+            <input type="text" id="a" name="a" placeholder="digite o valor do eixo Y">
+        </div>
+        <div class="form-group">  
+            <label for="b">Número 2:</label>
+            <input type="text" id="b" name="b" placeholder="digite o valor do eixo X">
+        </div>
+        <div class="form-group">  
+            <label for="n">Nível de Precisão</label>
+            <input type="text" id="n" name="n" placeholder="escolha um número de 1 a 8 - recomendado: 6">
+        </div>
+        <div class="form-button-calc">
+            <button type="button" onclick="enviarParaAPI()">Calcular</button>
+        </div>
+
+        <div class="result">
+            <div id="result"></div>
+        </div>
+
+        </div>
+    </div>
+    <div class="container-historico">
+        <h2>Histórico:</h2>
+        <ul id="history">
+            <!-- O histórico será preenchido dinamicamente aqui -->
+        </ul>
+        <div class="form-button-hist">
+            <button onclick="clearHistory()">Limpar Histórico</button> <!-- Novo botão -->
+        </div>
+    </div>
+    <span></span>
+</main>
+
+<!---------------------------------- JavaScript --------------------------------------->
+
+<script src="elipse.js"></script>
+
+</body>
+</html>
