@@ -140,6 +140,9 @@ p {
 
   @media (max-width: 480px) {
 
+    main {
+      padding-top: 70px;
+    }
     .form-button-calc button {
       width: auto;
     }
