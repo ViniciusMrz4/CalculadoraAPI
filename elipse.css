@@ -137,3 +137,11 @@ p {
     font-weight: bold;
     text-align: center;
   }
+
+  @media (max-width: 480px) {
+
+    .form-button-calc button {
+      width: auto;
+    }
+
+  }
